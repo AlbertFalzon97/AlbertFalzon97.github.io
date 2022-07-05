@@ -1,3 +1,18 @@
+/*
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the 'License');
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an 'AS IS' BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 window.gltfLoader = new THREE.GLTFLoader();
 /**
  * The Reticle class creates an object that repeatedly calls
@@ -17,8 +32,8 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load("models/7_Decimated.gltf", function(gltf) {
-  const flower = gltf.scene.children.find(c => c.name === '7_Decimated')
+window.gltfLoader.load("models/stickman.gltf", function(gltf) {
+  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
   flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
