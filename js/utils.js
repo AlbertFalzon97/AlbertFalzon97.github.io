@@ -17,8 +17,8 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
-  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+window.gltfLoader.load("models/7_Decimated.obj", function(gltf) {
+  const flower = gltf.scene.children.find(c => c.name === '7_Decimated')
   flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
